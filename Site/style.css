@@ -1,0 +1,224 @@
+/* ======== CONFIGURAÇÕES GERAIS ======== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #0e3505;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ======== BANNER ======== */
+.banner {
+  background: linear-gradient(rgba(5, 82, 29, 0.918), rgba(5, 82, 29, 0.918)), url('https://images.unsplash.com/photo-1588776814546-d7c53e9b0d42?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  text-align: center;
+  color: white;
+  padding: 120px 20px;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+.banner p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.btn-banner {
+  background-color: #ffb703;
+  color: #333;
+  padding: 14px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-banner:hover {
+  background-color: #fb8500;
+}
+
+/* ======== MENU ======== */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #0e3505;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffb703;
+}
+
+/* ======== SEÇÃO SOBRE ======== */
+#sobre {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-sobre {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
+  color: #0a661a;
+  margin-bottom: 10px;
+}
+
+.subtitulo-sobre {
+  font-weight: bold;
+  color: #0e3505;
+  margin-bottom: 20px;
+}
+
+.texto1-sobre,
+.texto2-sobre,
+.texto3-sobre {
+  margin-bottom: 16px;
+  color: #0e3505;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ======== SEÇÃO TRATAMENTOS ======== */
+#Tratamentos {
+  padding: 60px 20px;
+  background-color: #f3f9f3;
+  text-align: center;
+}
+
+.titulo-tratamentos {
+  color: #104a03;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.titulo-card1, .titulo-card2, .titulo-card3,
+.titulo-card4, .titulo-card5, .titulo-card6, .titulo-card7 {
+  font-family: 'Aleo', serif; /* fonte Aleo */
+  color: #0e3505;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.texto-card1, .texto-card2, .texto-card3,
+.texto-card4, .texto-card5, .texto-card6, .texto-card7 {
+  color: #333;
+  font-size: 1rem;
+}
+
+.img-card {
+  width: 80px;           /* largura fixa */
+  height: 80px;          /* altura fixa */
+  object-fit: cover;      /* mantém proporção e corta o excesso */
+  border-radius: 8px;     /* bordas arredondadas */
+  display: block;         /* força alinhamento */
+  margin: 0 auto 12px auto; /* centraliza a imagem e dá espaço abaixo */
+}
+
+/* ======== SEÇÃO CONTATO ======== */
+#contato {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.titulo-contato {
+  color: #104a03;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.texto-contato1, .texto-contato2 {
+  color: #0e3505;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.botoes-contato {
+  margin-top: 20px;
+}
+
+.btn-contato {
+  display: inline-block;
+  background-color: #104a03;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-contato:hover {
+  background-color: #0a661a;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1eb15a;
+}
+
+/* ======== RODAPÉ ======== */
+footer {
+  text-align: center;
+  background-color: #0e3505;
+  color: white;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
